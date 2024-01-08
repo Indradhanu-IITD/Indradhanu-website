@@ -244,10 +244,10 @@ nav {
 .resources-info-inner {
     background-color: white;
     width: 600px;
-    height: 6000px;
+    height: 450px;
     border-radius: 50px;
     padding: 10vh 3vw;
-    position: relative;
+    position: absolute;
 }
 
 .resources-info-inner p {
