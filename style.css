@@ -247,7 +247,8 @@ nav {
     height: 450px;
     border-radius: 50px;
     padding: 10vh 3vw;
-    position: absolute;
+    position: relative;
+    z-index: 1;
 }
 
 .resources-info-inner p {
