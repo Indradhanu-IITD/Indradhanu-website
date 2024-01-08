@@ -244,9 +244,9 @@ nav {
 .resources-info-inner {
     background-color: white;
     width: 600px;
-    height: 500px;
+    height: 450px;
     border-radius: 50px;
-    padding: 10vh 3vw;
+    padding: 5vh 3vw;
     position: relative;
 }
 
