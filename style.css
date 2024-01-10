@@ -345,7 +345,7 @@ nav {
 }
 
 footer {
-    background-color: #FFF8E1;
+    background-color: #f9e9b6;
     padding: 10vh 7vw;
     display: flex;
     align-items: center;
@@ -389,7 +389,8 @@ footer {
 }
 
 .copyright {
-    background-color: #FFF8E1;
+    background-color: #f9e9f6;
     text-align: center;
-    padding-bottom: 5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
