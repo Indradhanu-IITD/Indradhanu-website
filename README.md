@@ -1,3 +1,3 @@
 # main-website
 
-The link for the website - [https://indradhanuiitd.in/]
+The link for the website - https://indradhanuiitd.in/
