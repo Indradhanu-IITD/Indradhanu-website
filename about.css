@@ -1,0 +1,163 @@
+.about-us-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.about-us-image img {
+    width: 50%;
+}
+
+.about-us-text {
+    padding: 10vh 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2EDFF;
+}
+
+.about-us-text h2 {
+    font-weight: 900;
+    color: #315EA9;
+    font-size: 2.5rem;
+    margin-bottom: 5vh;
+}
+
+.about-us-text p {
+    color: #083888;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
+.charter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 7vw;
+}
+
+.charter-inner {
+    width: 80%;
+    background-color: #DDFFEF;
+    padding: 5vh 5vw;
+    border-radius: 50px;
+}
+
+.charter-inner h2 {
+    font-weight: 900;
+    color: #30C67E;
+    font-size: 2.5rem;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.charter-inner p {
+    font-weight: 700;
+    color: #22AC6A;
+    font-size: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+.charter-inner ul {
+    color: #22AC6A;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+}
+
+.charter-inner li {
+    margin-bottom: 2vh;
+}
+
+.charter-inner a {
+    text-decoration: none;
+    color: #30C67E;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #30C67E;
+    border-radius: 50px;
+    width: max-content;
+    margin: auto;
+    padding: 14px 30px;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
+}
+
+.team {
+    padding: 10vh 7vw;
+    background-color: #FFF8E1;
+}
+
+.team h2 {
+    font-weight: 900;
+    color: #D9B84B;
+    font-size: 2.5rem;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.team-card {
+    width: 300px;
+    border-radius: 50px;
+    margin-bottom: 5vh;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.team-card h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.team-card p {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.faculty-card {
+    width: 300px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.faculty-card img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.faculty-card h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.faculty-card p {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1vh;
+}
