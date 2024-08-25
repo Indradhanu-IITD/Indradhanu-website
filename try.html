@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Be an Ally</title>
+    <script src="https://kit.fontawesome.com/8d85e3b30d.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FCF1F2;;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+        }
+        .form-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 40px auto;
+            flex: 1;
+        }
+        h2 {
+            font-weight: 900;
+            color: #315EA9;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 8px; /* Add space between the radio button and the text */
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 8px; /* Add space between the radio button and the text */
+        }
+        
+        input[type="text"], input[type="email"], textarea, select, input[type="range"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #5CCF98;
+            color: white;
+            padding: 15px 20px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #4CAF81;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .checkbox-group label, .radio-group label {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .box {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top:20px;
+            padding-bottom:35px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 600;
+        }
+        .box.blue {
+            margin-top:10px;
+            padding-bottom: 30px;
+            background-color: #E2EDFF;
+        }
+        .box.green {
+            background-color: #A5FFD4;
+        }
+        .box.orange {
+            background-color: #FFE0C3;
+        }
+        .box.orange p {
+            margin-left: 5px;
+            color: #923b3b;
+            font-size: 14px;
+        }
+        .box.orange textarea {
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        .box.blue p{
+            color:#000000
+        }
+        .box.green p{
+            color:#000000
+        }
+        .box.green p:last-of-type{
+            padding-top: 20px;
+        }
+        .commitment {
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .commitment label{
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        fieldset{
+            background-color:#fff;
+            margin:2em;
+            padding:1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="js-container">
+        <main role="main">
+            <section>
+                <div class="layout-semibreve">   
+                    <h2>Story Bucket</h2>
+                    <p id="story">
+                        In 
+                        <input type="text" id="place" name="place" placeholder="BEAUTIFUL PLACE" />
+                        <input type="text" id="person" name="person" placeholder="WONDERFUL PERSON" />
+                        <select id="verb">
+                            <option>made</option>
+                            <option>created</option>
+                            <option>invented</option>
+                            <option>designed</option>
+                            <option>researched</option>
+                            <option>organized</option>
+                            <option>helped</option>
+                            <option>wrote</option>
+                        </select> 
+                        <input type="text" id="thing" name="thing" placeholder="AN AMAZING THING" />
+                        .
+                    </p>
+                    <p id="extras">More info >></p>
+                    <!-- form is hidden -->
+                    <form action="https://docs.google.com/a/codeforamerica.org/forms/d/1AfZkJkynJBG6HMb4-e6wnrO7hycI0Q6T2Q1b4djxuYI/formResponse" method="POST" id="story-bucket-form" style="display:none;">
+                        <ul class="list-form">
+                            <input id="story-submit" type="text" name="entry.1478106503" style="display:none;" />
+                            <li class="form-field">
+                                <label>Image</label>
+                                <input id="image" type="text" placeholder="flickr link" name="entry.2080554330" />
+                            </li>
+                            <li class="form-field">
+                                <label>Link</label>
+                                <input id="link" type="text" name="entry.305566744" placeholder="http://codeforamerica.org" />
+                            </li>
+                            <li class="form-field">
+                                <label>Tags</label>
+                                <input id="tags" type="text" name="entry.1499973970" placeholder="homepage, brigade, kansas city" />
+                            </li>
+                        </ul>
+                    </form>
+                    <button id="tell" class="button-prominent button-l">Tell</button>
+                </div>
+            </section>
+        </main>
+    </div><!-- /.js-container -->
+    <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+
+    <script>
+        $("#extras").click(function(evt){
+            $("#story-bucket-form").toggle();
+        })
+        $("#tell").click(function(){
+            var story = "In " + $("#place").val() + ", ";
+            story += $("#person").val() + " ";
+            story += $("#verb option:selected").text() + " ";
+            story += $("#thing").val() + ".";
+            $("#story-submit").val(story);
+            $("#story-bucket-form").submit();
+        })
+    </script>
+
+</body>
+</html>
