@@ -256,7 +256,34 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
+        <div class="form-container">
+            
+            <h2>Hello</h2>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScSqG4sbDI7-F3CXOzLgvVL9axp496gpVGFzFW7fz7BoXsa7w/formResponse" " method="POST" id="hey" style="display:none;">
+            <p> Hey! How you doing?
+            <input type="text" id="name" name="name" placeholder="BEAUTIFUL PLACE" />
+            <input type="text" id="entry" name="entry" placeholder="WONDERFUL PERSON" />
+            <input type="text" id="designation" name="designation" placeholder="AN AMAZING THING" />
+            </p>
+            
+            <button id="greet">greet</button></div>
     </main>
+    <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+
+    <script>
+        $("#extras").click(function(evt){
+            $("#hey").toggle();
+        })
+        $("#greet").click(function(){
+            var story = "In " + $("#name").val() + ", ";
+            story += $("#entry").val() + " ";
+            story += $("#designation").val() + " ";
+            story += $("#thing").val() + ".";
+            $("#name").val(story);
+            $("#hey").submit();
+        })
+    </script>
+    
     <footer>
         <div class="footer-left">
             <p>IIT-Delhi, Hauz Khas</p>
