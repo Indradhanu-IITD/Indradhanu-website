@@ -115,6 +115,9 @@
 
 .team-card {
     width: 300px;
+    height:300px;
+    align-items:center;
+    justify-content:center;
     border-radius: 50px;
     margin-bottom: 5vh;
 }
