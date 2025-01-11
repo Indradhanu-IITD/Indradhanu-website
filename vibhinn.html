@@ -1,95 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vibhinn '24</title>
-  <link rel="shortcut icon" href="assets/favicon.png">
-  <link rel="stylesheet" href="landing.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Vibhinn 2025</title>
+    <script src="https://kit.fontawesome.com/8d85e3b30d.js" crossorigin="anonymous"></script>
+    <style>
+      /* Hero Section */
+.section-1 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url('pride.jpg') no-repeat center center/cover; /* Replace with your background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.section-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text readability */
+    z-index: 1;
+}
+
+.section-1-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.fest-logo {
+
+    width: 600px; /* Adjust size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    margin: 0;
+}
+
+section-1 p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+}
+
+/* Section 2 Styles */
+.section-2 {
+    padding: 50px 20px;
+    background: url('assets/lavender.png') no-repeat center center/cover; /* Replace with your background image */
+    text-align: center;
+}
+
+.section-2-inner {
+    max-width: 800px; /* Restrict the width for readability */
+    margin: 0 auto;
+    color: #333; /* Darker text for better readability */
+}
+
+.section-2 h2 {
+    font-size: 2.5rem;
+    color: rgb(3, 3, 133); /* Slightly darker shade for the heading */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Adds emphasis to the heading */
+    letter-spacing: 2px;
+}
+
+.section-2 p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Improves paragraph readability */
+    margin-bottom: 20px;
+    color:rgb(3, 3, 133); /* Softer text color for paragraphs */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-2 h2 {
+        font-size: 2rem;
     }
 
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    body::-webkit-scrollbar {
-      display: none;
+    .section-2 p {
+        font-size: 1rem;
     }
+}
 
-    /* Hide scrollbar for IE, Edge and Firefox */
-    body {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-      overflow-x: hidden;
-    }
+/* Section 3 Styles */
+.section-3 {
+    padding: 50px 0; /* Add space above and below the section */
+    background-color: #f3d1d1; /* Optional: Neutral background for emphasis */
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    
+}
 
-    #websitebutton {
-      position: absolute;
-      left: 11.92%;
-      bottom: 2.3%;
-      z-index: 1000;
-      background-color: aquamarine;
-      height: 20px;
-      opacity: 0;
-      width: 25%;
-    }
+.section-3-inner {
+    max-width: 50vw; /* Ensure the image container doesn’t exceed the viewport width */
+    overflow: hidden; /* Prevent any overflowing content */
+}
 
-    #igminor {
-      position: absolute;
-      left: 11.92%;
-      bottom: 1.7%;
-      z-index: 1000;
-      background-color: aquamarine;
-      height: 20px;
-      opacity: 0;
-      width: 25%;
-    }
+.section-3 img {
+    width: 100%; /* Scale the image to fit the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 1200px; /* Optional: Constrain the image's maximum width */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure proper centering and remove inline gaps */
+    border-radius: 8px; /* Optional: Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
 
-    #transparent {
-      position: absolute;
-      height: 80px;
-      width: 230px;
-      background-color: transparent;
-      opacity: 0.4;
-      z-index: 1000;
-      top: 5vh;
-      right: 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-3 img {
+        max-width: 90%; /* Add extra padding for smaller screens */
     }
-
-    #rectangle {
-      width: 100%;
-    }
-
-    #rectangle img {
-      width: 100%;
-      display: block;
-    }
+}
 
 
-    .maint {
-      position: relative;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/8d85e3b30d.js" crossorigin="anonymous"></script>
+    </style>
 </head>
-
 <body>
-  <div class="w-fit h-fit maint">
-    <div id="rectangle"><img class="image" src="assets/Group 41 (4).svg" id="Rect1"></div>
-    <a href="index.html">
-      <div id="transparent"></div>
-    </a>
-    <a href="index.html">
-      <div id="websitebutton">Indradhanu Website</div>
-    </a>
-    <a href="https://instagram.com/indradhanu.iitd" target="_blank">
-      <div id="igminor" dvvsdv>Indradhanu IG</div>
-    </a>
+  <header>
+    <nav>
+        <div class="nav-icon">
+            <a href="index.html"><img src="assets/indradhanu-logo.png" alt="logo"></a>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-items">
+                <li><a href="about.html">About Us</a></li>
+                <li><b><a href="vibhinn.html" style="background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Vibhinn'25</a></b></li>
+                <li><a href="projects.html">Our Projects</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="BeAnAlly.html">Be An Ally</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.facebook.com/indradhanu.iit" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/indradhanu.iitd" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="section-1">
+  <div class="section-1-inner">
+      <img src="assets/logo2_nobkg.png" alt="Vibhinn'25 Logo" class="fest-logo" />
+      <!-- <p>IIT Delhi's Annual LGBTQIA+ Fest</p> -->
   </div>
-</body>
+</div>
+<div class="section-2">
+    <div class="section-2-inner">
+        <h2>ABOUT VIBHINN</h2>
+        <p>Vibhinn is the LGBTQIA+ fest of IIT Delhi organised by Indradhanu, the LGBTQIA+ Collective of IIT Delhi. Vibhinn symbolises a community of diverse identities, thoughts and emotions that flourish in queer spaces. It aims to celebrate and unravel the human diversity that uniquely individualises us and yet connects us in humane ways.</p>
+        <p>Theme for the 3rd edition is <b>"Repairing Recognition"</b></p>
+    </div>
+</div>
+<div class="section-3">
+  <div class="section-3-inner">
+      <img src="assets/events.jpeg" alt="Content " />
+  </div>
+</div>
+<div class="resources" id="resources">
+  <h2>REGISTRATION LINKS</h2>
+  <div class="resources-inner">
+      <div class="resource-art">
+          <img src="assets/legs.png" alt="Legs">
+          <div class="resources-art-underline"></div>
+      </div>
+      <div class="resources-info">
+          <div class="resources-info-inner">
+              <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScXBEdXlquU5R23-si4LR6BuB04Rp5_A5kcaugFxAyTYrtgRA/viewform?usp=header" target="_blank">ViभिNN 2025 - Inaugral Ceremony</a></p>
+              <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfpcohuEIfa-0VH-N604elanHbePeKgFj8hea7SRrzX_s1b3Q/viewform?usp=header" target="_blank">ViभिNN 2025 - All India Queer Collective Conference</a></p>
+              <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeWPI-R597ACMuUQk6P-xz17gj-v4EQqrEqPWtkYGaKK9QaJg/viewform?usp=header" target="_blank">ViभिNN 2025 - Queers Got Talent</a></p>
+              <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdo3MpNqyDQZLLKZm4ZsSsp3xhUTkFsMBSNzhiFM2H8svNTIA/viewform?usp=header" target="_blank">ViभिNN 2025 - Pride Parade RSVP</a></p>
+              <a href="https://linktr.ee/indradhanu_iitd/" id="resource-view-more" target="_blank">View More</a>
+          </div>
+      </div>
+  </div>
+</div>
 
+
+<div class="footer-separator"></div>
+<footer>
+    <div class="footer-left">
+        <p>IIT Delhi, Hauz Khas</p>
+        <img src="assets/indradhanu-logo.png" alt="Logo">
+        <p><a href="mailto:indradhanu.iitdelhi@gmail.com">indradhanu.iitdelhi@gmail.com</a></p>
+    </div>
+
+    <div class="footer-right">
+        <img src="assets/iitdelhi.png" alt="IIT Delhi">
+    </div>
+</footer>
+<p class="copyright">&copy; 2024 Copyright: Indradhanu, IIT Delhi</p>
+
+</body>
 </html>

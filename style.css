@@ -29,26 +29,28 @@ nav {
 
 .nav-right {
     display: flex;
+    flex:1;
     align-items: center;
     width: 100%;
 }
 
 .nav-items {
-    height: 64px;
-    display: flex;
+    display: flex; /* Keep list items in a single row */
     align-items: center;
     justify-content: center;
-    flex: 1;
     list-style: none;
-}
+    margin: 0; /* Remove default list margin */
+    padding: 0; /* Remove default padding */}
 
 .nav-items li {
+    
     margin: 0 20px;
 }
 
 .nav-items li a {
     color: #6B6B6B;
     text-decoration: none;
+    white-space:nowrap;
 }
 
 .nav-social {
@@ -204,8 +206,8 @@ nav {
 }
 
 .resources h2 {
-    font-weight: 900;
-    color: #EC7100;
+    font-weight: 600;
+    color: #e97304;
     font-size: 2.5rem;
     margin-bottom: 5vh;
 }
@@ -229,9 +231,9 @@ nav {
 .resources-art-underline {
     height: 9px;
     background-color: #FFAD62;
-    width: 40%;
+    width: 30%;
     position: absolute;
-    left: 0;
+    /* left: 0; */
 }
 
 .resources-info {
@@ -242,6 +244,10 @@ nav {
 }
 
 .resources-info-inner {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
     background-color: white;
     width: 600px;
     height: 450px;
